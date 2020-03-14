@@ -30,21 +30,16 @@ Add `export` to the plugins section of your `.eslintrc` configuration file. You 
 }
 ```
 
-
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
     "rules": {
-        "export/no-import-module-exports": 2
+        "export/no-import-module-exports": "error"
     }
 }
 ```
 
 ## Supported Rules
 
-* export/no-import-module-exports
-
-
-
-
+* **export/no-import-module-exports** Should not use module.exports or export.xxx when there are import sentences 

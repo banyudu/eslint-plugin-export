@@ -20,7 +20,7 @@ var RuleTester = require('eslint').RuleTester
 
 const parserOptions = { ecmaVersion: 6, sourceType: 'module' }
 const error = {
-  message: 'Cannot use exports or module.exports in modules that import using ES Module (`import xxx from \'xxx\'`)',
+  message: 'Cannot use exports or module.exports in modules that import using ES Module',
   type: 'MemberExpression'
 }
 
