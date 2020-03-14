@@ -10,27 +10,37 @@ This rule aims to...
 Examples of **incorrect** code for this rule:
 
 ```js
+import { stuff } from 'starwars'
+module.exports = thing
+```
 
-// fill me in
-
+```js
+import * as allThings from 'starwars'
+exports.bar = thin
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
+const thing = require('thing')
+module.exports = thing
+```
 
-// fill me in
-
+```js
+import thing from 'other-thing'
+export default thin
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+No options.
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+When you are using babel plugins who supports mix usage of module.exports and import.
 
 ## Further Reading
 
 If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+
+[eslint plugin import issue](https://github.com/benmosher/eslint-plugin-import/issues/760)
